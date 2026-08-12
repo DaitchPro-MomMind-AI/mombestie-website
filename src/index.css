@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
+@import 'tailwindcss';
+
+/*
+ * Shared MomMind design tokens. Duplicated from ../../src/index.css —
+ * see docs/ARCHITECTURE.md §11 for the plan to extract these into one
+ * package once these apps leave the Figma Make sandbox.
+ */
+@theme inline {
+  --color-coral: #EE674E;
+  --color-coral-soft: #F47B66;
+  --color-peach: #F6B6A5;
+  --color-peach-soft: #FFD6C9;
+  --color-cream: #FFF8F4;
+  --color-offwhite: #FFFCFA;
+  --color-yellow-warm: #F8C85E;
+  --color-charcoal: #242424;
+  --color-secondary-text: #6E6E73;
+  --color-success: #55A67A;
+  --color-info: #6299D5;
+  --color-error: #D9534F;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #FFFCFA;
+  color: #242424;
+}
+
+.font-display {
+  font-family: 'DM Serif Display', Georgia, serif;
+}
+
+.glass-card {
+  background: rgba(255, 252, 250, 0.82);
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 24px rgba(238, 103, 78, 0.08), 0 1px 4px rgba(0,0,0,0.04);
+}
+
+.glass-card-strong {
+  background: rgba(255, 248, 244, 0.88);
+  backdrop-filter: blur(28px);
+  -webkit-backdrop-filter: blur(28px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(238, 103, 78, 0.12), 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.coral-gradient {
+  background: linear-gradient(135deg, #EE674E 0%, #F6A68E 100%);
+}
+
+.peach-gradient {
+  background: linear-gradient(135deg, #F6B6A5 0%, #FFF8F4 100%);
+}
+
+.action-btn {
+  transition: all 0.15s ease;
+}
+.action-btn:active {
+  transform: scale(0.97);
+}
+
+.scroll-area {
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scroll-area::-webkit-scrollbar {
+  display: none;
+}
+
+[data-dark="true"] {
+  color-scheme: dark;
+}
+[data-dark="true"] body {
+  background-color: #18181B;
+  color: #F4F4F5;
+}
+[data-dark="true"] .glass-card {
+  background: rgba(39, 39, 42, 0.92);
+  border-color: rgba(63, 63, 70, 0.8);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3), 0 1px 4px rgba(0,0,0,0.2);
+}
+[data-dark="true"] .glass-card-strong {
+  background: rgba(39, 39, 42, 0.96);
+  border-color: rgba(63, 63, 70, 0.9);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4), 0 2px 8px rgba(0,0,0,0.25);
+}
