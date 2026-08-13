@@ -69,7 +69,7 @@ type Dict = Record<string, string>
 // locale shown by default (§7.1) — not translated copy. Bangladesh/Japan
 // were an illustrative example, not a request to ship Bangla/Japanese
 // content; bn/ja intentionally fall back to English at lookup time (t())
-// until real, human-reviewed translations exist (mommind-docs §12 — this
+// until real, human-reviewed translations exist (mombestie-docs §12 — this
 // product does not auto-publish AI-drafted translations).
 export const STRINGS: Record<"en" | "bn" | "ja", Dict> = {
   en: {
@@ -77,7 +77,7 @@ export const STRINGS: Record<"en" | "bn" | "ja", Dict> = {
     navMarketplace: "Marketplace", navProviders: "For Providers", navPricing: "Pricing", navSafety: "Safety & Privacy", navFaq: "FAQ",
     heroEyebrow: "Global AI-powered platform for mothers & children",
     heroTitle: "Every feeding, every nap, every milestone — understood, not just logged.",
-    heroSubtitle: "MomMind AI combines baby tracking, an AI copilot, a voice assistant, routine predictions, and a vetted family services marketplace into one app built for parents of newborns and toddlers, everywhere.",
+    heroSubtitle: "MomBestie AI combines baby tracking, an AI copilot, a voice assistant, routine predictions, and a vetted family services marketplace into one app built for parents of newborns and toddlers, everywhere.",
     ctaDownload: "Download the App", ctaProvider: "Become a Provider",
     pricingEyebrow: "Family plans", pricingTitle: "Simple pricing", pricingSubtitle: "Pricing shown for your country automatically.",
     planFree: "Free", planPlus: "Plus", planFamily: "Family", getStarted: "Get Started", startTrial: "Start Free Trial",

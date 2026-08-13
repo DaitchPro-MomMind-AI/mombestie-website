@@ -26,7 +26,7 @@ jobs:
       - run: npm ci
       - run: npm run build
         env:
-          VITE_BASE_PATH: /mommind-website/
+          VITE_BASE_PATH: /mombestie-website/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

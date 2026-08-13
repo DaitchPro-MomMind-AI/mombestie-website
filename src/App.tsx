@@ -22,7 +22,7 @@ const FEATURES = [
 ]
 
 const SAFETY_POINTS = [
-  'MomMind is not a doctor. It never diagnoses, never recommends medication doses, and never claims clinical certainty.',
+  'MomBestie is not a doctor. It never diagnoses, never recommends medication doses, and never claims clinical certainty.',
   'High-risk medical questions are escalated to “please contact your pediatrician / emergency services” rather than answered.',
   'Child data (profile, health logs, photos, voice) is encrypted in transit and at rest, and is never used for targeted advertising.',
   'You can export or delete your household’s data at any time from the in-app Privacy Center.',
@@ -48,7 +48,7 @@ function NavBar({
       <div className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between">
         <button onClick={() => onNavigate('top')} className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-xl coral-gradient flex items-center justify-center text-white font-display">M</div>
-          <span className="font-display text-lg text-[#242424]">MomMind AI</span>
+          <span className="font-display text-lg text-[#242424]">MomBestie AI</span>
         </button>
         <nav className="hidden lg:flex items-center gap-6">
           {NAV_IDS.map(id => (
@@ -179,7 +179,7 @@ export default function App() {
         <div className="grid sm:grid-cols-3 gap-6">
           {[
             { step: '1', title: 'Log in seconds', desc: 'Tap or say what happened — a feed, a nap, a diaper change.' },
-            { step: '2', title: 'MomMind learns the pattern', desc: 'BabyPredict turns your history into confident, labeled predictions.' },
+            { step: '2', title: 'MomBestie learns the pattern', desc: 'BabyPredict turns your history into confident, labeled predictions.' },
             { step: '3', title: 'Share the day', desc: 'Hand off a clean summary to a partner, grandparent, or babysitter.' },
           ].map(s => (
             <div key={s.step}>
@@ -191,7 +191,7 @@ export default function App() {
         </div>
       </Section>
 
-      <Section id="ai" eyebrow="AI Mom Copilot & Voice" title="Ask MomMind, hands-free if you need to" subtitle="MomMind always identifies itself as AI and always flags health topics for a real doctor — see Safety & Privacy below.">
+      <Section id="ai" eyebrow="AI Mom Copilot & Voice" title="Ask MomBestie, hands-free if you need to" subtitle="MomBestie always identifies itself as AI and always flags health topics for a real doctor — see Safety & Privacy below.">
         <div className="grid sm:grid-cols-2 gap-4">
           <div className="glass-card-strong rounded-2xl p-6">
             <p className="text-xs font-semibold text-[#EE674E] uppercase tracking-wide mb-2">Chat</p>
@@ -200,7 +200,7 @@ export default function App() {
           </div>
           <div className="glass-card-strong rounded-2xl p-6">
             <p className="text-xs font-semibold text-[#EE674E] uppercase tracking-wide mb-2">Voice</p>
-            <p className="text-sm text-[#6E6E73]">Streaming speech-to-text, barge-in support, and multilingual replies — built for when your hands are full. MomMind says who it is at the start of every session.</p>
+            <p className="text-sm text-[#6E6E73]">Streaming speech-to-text, barge-in support, and multilingual replies — built for when your hands are full. MomBestie says who it is at the start of every session.</p>
           </div>
         </div>
       </Section>
@@ -223,7 +223,7 @@ export default function App() {
         </div>
       </Section>
 
-      <Section id="providers" eyebrow="For Providers" title="Grow your business with MomMind" subtitle="No monthly subscription — pay a one-time application fee, keep control of your services, and MomMind takes a commission only on completed bookings.">
+      <Section id="providers" eyebrow="For Providers" title="Grow your business with MomBestie" subtitle="No monthly subscription — pay a one-time application fee, keep control of your services, and MomBestie takes a commission only on completed bookings.">
         <div className="grid sm:grid-cols-3 gap-4 max-w-3xl">
           <div className="glass-card rounded-2xl p-5">
             <p className="text-xs font-semibold text-[#6E6E73] uppercase tracking-wide mb-1">One-time fee</p>
@@ -243,7 +243,7 @@ export default function App() {
         </div>
         <p className="text-xs text-[#6E6E73] mt-4 max-w-lg">
           Pricing shown for {country.name} ({country.currency}), detected automatically. Actual fees and commission are
-          set per country by MomMind's Country Configuration and may differ — see the Admin Portal.
+          set per country by MomBestie's Country Configuration and may differ — see the Admin Portal.
         </p>
         <button className="action-btn coral-gradient text-white font-semibold px-6 py-3 rounded-2xl mt-6">Start Provider Registration</button>
       </Section>
@@ -269,7 +269,7 @@ export default function App() {
         </div>
       </Section>
 
-      <Section id="safety" eyebrow="Safety, privacy & security" title="Your child's data is not a product" subtitle="MomMind is a parenting companion, not a medical provider.">
+      <Section id="safety" eyebrow="Safety, privacy & security" title="Your child's data is not a product" subtitle="MomBestie is a parenting companion, not a medical provider.">
         <div className="space-y-3 max-w-2xl">
           {SAFETY_POINTS.map(p => (
             <div key={p} className="flex gap-3">
@@ -283,8 +283,8 @@ export default function App() {
       <Section id="faq" eyebrow="FAQ" title="Common questions">
         <div className="space-y-4 max-w-2xl">
           {[
-            { q: 'Is MomMind available where I live?', a: 'MomMind is built to be country-configurable from day one. Availability, pricing, and marketplace access vary by country — check the app for your region.' },
-            { q: 'Does MomMind replace my pediatrician?', a: 'No. MomMind never diagnoses or recommends treatment. High-risk questions are escalated to “contact your pediatrician” rather than answered.' },
+            { q: 'Is MomBestie available where I live?', a: 'MomBestie is built to be country-configurable from day one. Availability, pricing, and marketplace access vary by country — check the app for your region.' },
+            { q: 'Does MomBestie replace my pediatrician?', a: 'No. MomBestie never diagnoses or recommends treatment. High-risk questions are escalated to “contact your pediatrician” rather than answered.' },
             { q: 'How is my data used?', a: 'Never for targeted advertising. You can export or delete it at any time from the Privacy Center.' },
           ].map(f => (
             <div key={f.q} className="glass-card rounded-2xl p-5">
@@ -300,7 +300,7 @@ export default function App() {
           <div>
             <div className="flex items-center gap-2 mb-3">
               <div className="w-7 h-7 rounded-lg coral-gradient flex items-center justify-center text-white text-sm font-display">M</div>
-              <span className="font-display text-[#242424]">MomMind AI</span>
+              <span className="font-display text-[#242424]">MomBestie AI</span>
             </div>
             <p className="text-xs text-[#6E6E73]">A global AI-powered platform for mothers and children.</p>
           </div>
@@ -318,7 +318,7 @@ export default function App() {
           ))}
         </div>
         <div className="border-t border-[#F6EDE8] py-4 text-center text-xs text-[#6E6E73]">
-          © {new Date().getFullYear()} MomMind AI. Legal entity, terms, and privacy notices vary by country — see Legal.
+          © {new Date().getFullYear()} MomBestie AI. Legal entity, terms, and privacy notices vary by country — see Legal.
         </div>
       </footer>
     </div>

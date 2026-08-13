@@ -2,7 +2,7 @@
 @import 'tailwindcss';
 
 /*
- * Shared MomMind design tokens. Duplicated from ../../src/index.css —
+ * Shared MomBestie design tokens. Duplicated from ../../src/index.css —
  * see docs/ARCHITECTURE.md §11 for the plan to extract these into one
  * package once these apps leave the Figma Make sandbox.
  */
